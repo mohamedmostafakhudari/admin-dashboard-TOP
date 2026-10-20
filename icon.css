@@ -1,7 +1,20 @@
 @scope (.icon) {
   :scope {
-    width: 24px;
-    fill: currentColor;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  > svg {
+    width: var(--size, 24px);
+    height: var(--size, 24px);
     flex-shrink: 0;
+    fill: currentColor;
+  }
+}
+
+@scope (.icon-large) {
+  :scope {
+    --size: 48px;
   }
 }

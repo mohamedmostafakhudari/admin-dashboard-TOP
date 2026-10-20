@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: inherit;
 
   transition: color var(--transition-fast);
 }
@@ -145,4 +146,10 @@ input:user-valid:focus-visible {
 
 input:user-invalid:focus-visible {
   --color-focus-ring: rgb(220 38 38 / 0.35);
+}
+
+ul[role=list] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

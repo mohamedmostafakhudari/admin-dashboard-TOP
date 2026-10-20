@@ -159,3 +159,78 @@ body {
     }
   }
 }
+
+@scope (.aside) {
+  :scope {
+    color: var(--color-on-primary);
+
+    background-color: var(--color-primary);
+    padding-block-start: var(--space-8);
+    padding-block-end: var(--space-12);
+    margin-top: var(--space-6)
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+  }
+
+  .nav-item > a[href] {
+    display: flex;
+    align-items: center;
+    
+    text-transform: capitalize;
+  }
+
+  .nav-item > a[href]:hover {
+    color: var(--color-secondary);
+  }
+
+  .icon {
+    padding-inline: var(--space-6);
+  }
+
+  .logo .icon {
+    padding-inline-end: var(--space-2);
+  }
+
+  ul[role=list] {
+    margin-left: var(--space-3);
+  }
+
+  .navbar {
+    margin-top: var(--space-12);
+
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 30em) {
+    .navbar {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 50em) {
+    :scope {
+      margin-top: 0;
+      width: 300px;
+      
+      position: fixed;
+      inset-block: 0;
+    }
+
+    .navbar {
+      grid-template-columns: 1fr;
+
+      gap: var(--space-12);
+    }
+
+    .logo {
+      font-size: 2rem;
+    }
+  }
+}
