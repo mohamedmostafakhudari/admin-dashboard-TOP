@@ -1,6 +1,7 @@
 @scope (.avatar) {
   :scope {
     width: var(--size, 48px);
+    flex-shrink: 0;
   }
 
   @media (min-width: 50em) {
@@ -24,12 +25,6 @@
 
 @scope (.avatar-small) {
   :scope {
-    --size: 40px;
-  }
-
-  @media (min-width: 50em) {
-    :scope {
-      --size: 48px;
-    } 
+    --size: 48px;
   }
 }

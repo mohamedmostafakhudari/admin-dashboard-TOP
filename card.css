@@ -17,6 +17,8 @@
 
     color: var(--color-text-muted);
     line-height: 1.25;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .title {
@@ -29,5 +31,9 @@
     &:hover {
       color: var(--color-secondary);
     }
+  }
+
+  .footer {
+    padding-top: var(--space-2);
   }
 }
