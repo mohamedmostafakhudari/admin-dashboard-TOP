@@ -1,0 +1,7 @@
+@scope (.icon) {
+  :scope {
+    width: 24px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+}

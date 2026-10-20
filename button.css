@@ -1,0 +1,40 @@
+@scope (.btn:not(.btn-icon-only)) {
+  :scope {
+    text-transform: capitalize;
+    font-weight: medium;
+    color: var(--text-color, var(--color-on-primary));
+
+    background-color: var(--bg-color, var(--color-primary));
+    width: 6rem;
+    padding-block: var(--space-2);
+    border: none;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    
+    cursor: pointer;
+    transition: var(--transition-fast);
+  }
+}
+@scope (.btn-icon-only) {
+  :scope {
+    color: var(--text-color, var(--color-text-main));
+
+    background-color: var(--bg-color, transparent);
+    width: fit-content;
+    border: none;
+
+    cursor: pointer;
+    transition: var(--transition-fast);
+  }
+}
+
+@scope (.btn-primary) {
+  :scope {
+    --bg-color: var(--color-primary);
+    --text-color: var(--color-on-primary);
+
+    &:hover {
+      --bg-color: var(--color-primary-hover);
+    }
+  }
+}

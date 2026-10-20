@@ -12,3 +12,7 @@
   max-width: 900px;
   margin-inline: auto;
 }
+
+.text-transform-none {
+  text-transform: none;
+}

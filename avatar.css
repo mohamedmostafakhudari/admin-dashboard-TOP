@@ -1,0 +1,35 @@
+@scope (.avatar) {
+  :scope {
+    width: var(--size, 48px);
+  }
+
+  @media (min-width: 50em) {
+    :scope {
+      --size: 56px;
+    } 
+  }
+}
+
+@scope (.avatar-large) {
+  :scope {
+    --size: 72px;
+  }
+
+  @media (min-width: 50em) {
+    :scope {
+      --size: 80px;
+    } 
+  }
+}
+
+@scope (.avatar-small) {
+  :scope {
+    --size: 40px;
+  }
+
+  @media (min-width: 50em) {
+    :scope {
+      --size: 48px;
+    } 
+  }
+}
